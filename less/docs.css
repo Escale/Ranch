@@ -66,9 +66,8 @@ h6, .h6 { font-size: 12px; line-height: 20px; font-weight:400;}
 .h2 {font-size: 30px; font-weight:400;}
 .h3 { font-size: 24px;  font-weight:400; }
 
-.lead {
-  color:#999;
-}
+.lead { color:#999; }
+
 /* Outline button for use within the docs */
 /*.btn { background:#f04b4d; cursor:pointer;
     line-height:25px; color:#fff; font-size:16px; text-align:center; text-transform:uppercase; border:none;
@@ -76,6 +75,8 @@ h6, .h6 { font-size: 12px; line-height: 20px; font-weight:400;}
     -webkit-box-shadow: 0px 3px #e03639; box-shadow: 0px 3px #e03639;
 }
 .btn-primary:hover { background:#f36a6c; border:none; }*/
+select.input-lg,
+select.input-sm {line-height:normal;}
 
 .btn { -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; }
 .btn-outline {
