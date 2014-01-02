@@ -81,6 +81,7 @@ select.input-sm {line-height:normal;}
 button.btn {line-height:12px;}
 li.dropdown .caret { border-top-color:#C4C4C4; }
 li.dropdown:hover .caret { border-top-color:#2a6496; margin-top:0; }
+button[type=submit] { padding:14px 12px;}
 
 .caret {margin-top:0; border-top-color:#fff;}
 .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
