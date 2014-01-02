@@ -1,0 +1,214 @@
+///// DOCUMENT /////
+
+// Liste des nouvelles pages
+// HTML
+	index.html // la liste des projets
+	taches.html // la liste des taches
+	form.html // formulaire d'un(e) projet/tache
+	connexion.html //page de connexion
+// LESS
+	// général
+	styles.less // pont entre les fichiers less et les fichiers html
+	colors.less 
+	type.less // style des objets globaux
+	header.less
+	content.less // contenu général des pages 
+	//par objet
+	modal.less 
+	forms.less
+	progress-bar.less
+	collapse.less
+	button.less
+	list.less
+// JS
+	bootstrap.js
+	bootstrap.min.js
+
+/////////////////////////////////////////
+
+// Liste des nouveaux composants
+header .logo // contient le logo de l'interface
+header .btn-search // style pour le bouton (textarea + submit) recherche
+header .dropdown // style pour le bouton dropdown
+
+section.headband // style du headband (partie inférieur du header) : titre page + buttons
+section.headband .text-shadow // style shadow sur buttons
+
+aside .sub-menu // style sous-menu de la partie aside
+
+section.content // style du contenu de la page aside + components
+section.content .component // composants de la page (le contenu véritable)
+section.content .component .category // catégories des titres des panel-heading issus de collapse
+section.content .component .important-none // style marquage des notes classées non importantes
+						   .important-active // style marquage des notes classées importantes 
+section.content .component .progress-date // style progressbar pour les dates > page Taches 
+section.content .component .caret-tache // style caret de la page Taches
+section.content .component .panel-text // style text dans le panel-body du collapse
+
+section.content .form // styles que sur la page Form
+section.content .form .caret-form // style caret de la page Form
+section.content .form .total-paye // style background dans tab facturation de la page Form
+section.content .form .total // style background dans tab facturation de la page Form
+
+section.connexion // style page connexion
+
+////////////////////////////////////////
+
+// Style des composants LESS modifiés
+
+// INPUT //
+	//checkbox
+	<div class="checkbox">
+	  	<label>
+	  		<div class="checked"><input type="checkbox" value=""></div>
+	  		//Ici le texte
+	  	</label>
+	</div>
+	/* ----- ORIGINAL
+	<div class="checkbox">
+		<label>
+			<input type="checkbox"> Check me out
+		</label>
+	</div> 
+	*/ 
+
+	//select
+	<div class="select">
+	  	<select id="project_industry" name="project_industry" class="form-control">
+	    	<option value="#">Liste des utilisateurs</option>
+	  	</select>
+	</div>
+	/* ------ ORIGINAL
+	<select class="form-control">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+	*/
+
+// NAVS //
+.nav-pills > li > a { border-radius:0; }
+.nav > li > a { padding:10px; }
+.nav > li > a:hover { background:@background-hover; }
+ul  ul {margin-left:10px;}
+.nav-stacked > li + li { .m0;}
+
+// NAVBAR
+header .nav-pills > li { .m0; }
+header .nav-pills > li:first-child { margin-left:0; }
+header .nav-pills > li:last-child { margin-right:0; }
+header .nav-pills > li > a { color:@header-link; width:150px; font-size:16px; font-weight: 300; line-height:30px; border-radius:0; }
+header .nav-pills > li > a:hover, 
+	   .nav-pills > li.active > a { background:@header-hover; color:#fff; }
+header .nav-pills > li.active > a:hover, 
+	   .nav-pills > li.active > a:focus { color:@header-color; background:@header-hover; }
+
+// BUTTONS //
+.btn { border-radius: 0; }
+button.btn { line-height:10px; }
+button.btn span { line-height:6px; }
+// default
+.btn-default { background:@btn-background; color:@btn-color; border-color:@border-color; }
+.btn-default:hover,
+.btn-default:focus { background:@btn-background-hover; color:@btn-color-hover; border-color:@btn-background-hover; }
+// primary
+.btn-primary {background-color:@color-style;}
+// search
+.btn-search button { border:0; background:@form-background; color:@btn-search-color; margin-top: -25px; }
+.btn-search input:hover,
+	.btn-search input:active,
+	.btn-search input:focus { background:@btn-search-hover; box-shadow:none; color:@btn-search-color; }
+.btn-search button span:hover,
+	.btn-search button span:active,
+	.btn-search button span:focus { color:@btn-color-hover; }
+// dropdown
+.dropdown-menu { border:none; border-radius:0; margin:0; padding:0; }
+header .dropdown-menu > li > a { line-height:30px; }
+header .dropdown-menu > li > a:hover { background:@btn-background; color:@text-color; }
+header button.dropdown span.glyphicon { color:@header-color; font-size: 20px; line-height:35px; margin-right:5px; }
+header button.dropdown span.caret { border-top-color:@header-color; margin-bottom:10px; }
+header .dropdown:hover span.glyphicon { color:#fff; }
+
+// PROGRESS BAR //
+// général
+.progress-bar { float: left; width: 0%; height: 100%; font-size: @font-size-small; color: @progress-bar-color; text-align: center; background-color: @progress-bar-bg;
+  	.box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));.transition(width .6s ease);}
+// date
+.progress-date { overflow: hidden; height: @line-height-progress-date; .mt10p; margin-bottom: @margin-b-progress-date; background-color: @progress-bg; border-radius: @border-radius-base;
+	.box-shadow(inset 0 1px 2px rgba(0,0,0,.1));}
+
+//LIST //
+.nav-pills > li > a { border-radius:0; }
+.nav > li > a { padding:10px; }
+.nav > li > a:hover { background:@background-hover; }
+ul  ul {margin-left:10px;}
+.nav-stacked > li + li { .m0;}
+
+// COLLAPSE
+// général
+.panel { box-shadow:none; }
+.panel-heading, 
+	.panel-group .panel { border-radius:0; }
+.panel-default { border:none; }
+.panel-group .panel-heading + .panel-collapse .panel-body { border-top:none; }
+.panel-default > .panel-heading + .panel-collapse .panel-body { border-top:none; }
+.panel-heading { height:30px; padding:10px 10px 25px 10px; background:none; border-color:@border-color; color:@text-color; }
+.panel-group .panel + .panel { margin-top:0; }
+// style modifié
+.component .panel-heading { .border-bottom; .transition; }
+.component .panel-heading h3, 
+	.component .panel-heading h2 { margin:0; }
+.component .panel-heading + .panel-body { margin-bottom:0; }
+.component .panel-heading > .caret { margin:5px 0; }
+.component .panel-body {margin: 0 0 20px 0; border:none; padding:10px; }
+.component .panel-text { .border-left; margin: 20px 0 20px 100px; padding-left:30px; padding-top:10px; padding-bottom:0; }
+.component .panel-heading:hover { background-color:@panel-heading-hover; .transition;}
+.component .category { padding-bottom:25px; }
+.component .category,
+	.component .category:hover { background:none; } 
+.component .in,
+.component .collapsing {.border-bottom;}
+.component .panel-heading .checkbox { margin:0; }
+.component .panel-heading .checkbox:first-child { margin-top:-5px; }
+.component .panel-heading .checkbox { margin-top:-2px; }
+//
+.form .panel-heading {padding-bottom:8px; background:#fdfdfd;}
+.form .panel-heading:hover {background:#fafafa;}
+
+//TABLE
+tr.total {background-color:@table-total-bg;}
+tr.total-paye {background-color:@table-total-paye-bg;}
+
+//MODAL
+// général
+.modal-content { margin-top: 20px; background-color: #ffffff; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius:0;}
+.modal-footer { border-top:0; margin:0; }
+.modal-header { border-bottom:0; padding-bottom:0;}
+.modal-body { padding-top:0; padding-bottom:0;}
+// style
+.modal-body label { margin-top:0; margin-bottom:0; }
+.modal-body .checkbox {margin-top:15px; margin-bottom:15px;}
+.modal-body .form-group {margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
