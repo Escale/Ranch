@@ -19,10 +19,13 @@ input { cursor:pointer; }
 
 
 // RADIO //
-.radio input[type=radio] { .glyphicon; .glyphicon-record; color:#e4e4e4; .transition; margin-top:3px;
+input[type=radio] { width:15px; height:15px; background-color:#fafafa; border-radius:15px; border:3px double #fafafa; .transition; margin-top:3px;
         -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;  }
-.radio input[type=radio]:hover {color:@color-style; opacity:.4; }
-.radio input[type=radio]:checked { color:@color-style; opacity:1; }
+input[type=radio]:hover {background-color:@color-style; opacity:.4; border:3px double #fafafa; }
+input[type=radio]:checked { background-color:@color-style; opacity:1; border:3px double #fafafa; }
+
+.input-group-addon input[type="radio"] { margin-top:3px; }
+
 //
 .radio-checked { display:inline-block; width:15px; height:15px;.border; padding:0; margin-right:10px; background:#fafafa; 
          -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; }
