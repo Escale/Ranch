@@ -446,23 +446,23 @@
 	</section>
 
 
-	<!-- Modal -->
+		<!-- Modal -->
 	<div class="modal fade" id="ajout-projet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="myModalLabel">Ajouter un projet</h4>
+	        <h4 class="modal-title" id="myModalLabel">Add a project</h4>
 	        <hr>
 	      </div>
 	      <div class="modal-body">
 	        	<div class="row">
 	        		<div class="col-md-6">
 	        			<div class="form-group">
-		                <label for="project_industry">Structure</label>
+		                <label for="project_industry">Organisation</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
-			                    	<option value="#">Liste des structures</option>
+			                    	<option value="#">Example</option>
 			                  	</select>
 			                </div>
 				  		</div>
@@ -471,37 +471,37 @@
 	        	<div class="row">
 	        		<div class="col-md-6">
 	        			<div class="form-group">
-		                <label for="project_industry">Chargé de projet</label>
+		                <label for="project_industry">Project Manager</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
-			                    	<option value="#">Liste des utilisateurs</option>
+			                    	<option value="#">users list</option>
 			                  	</select>
 			                </div>
 				  		</div>
 					</div>
 	        	</div>
 	        	<div class="form-group">
-			   		<label for="exampleInputEmail1">Nom du projet</label>
+			   		<label for="exampleInputEmail1">Project Name</label>
 			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Abilys">
 			  	</div>
 			  	<div class="form-group">
-			   		<label for="exampleInputEmail1">Type du projet</label>
+			   		<label for="exampleInputEmail1">Type</label>
 			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Application">
 			  	</div>
 			  	<div class="row">
 	        		<div class="col-md-6">
 	        			<div class="form-group">
-		                <label for="project_industry">Avancement</label>
+		                <label for="project_industry">Progress</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
-			                    	<option value="#">Attente</option>
+			                    	<option value="#">Pending</option>
 			                  	</select>
 			                </div>
 				  		</div>
 					</div>
 					<div class="col-md-6">
 	        			<div class="form-group">
-		                <label for="project_industry">&#201;tat commercial</label>
+		                <label for="project_industry">Commercial Statement</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
 			                    	<option value="#">Prospect</option>
@@ -513,43 +513,47 @@
 	        	<div class="row">
 				  	<div class="col-md-6">
 				  		<div class="form-group">
-			                <label for="project_industry">Démarrage</label>
+			                <label for="project_industry">Beginning</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
-			                    	<option value="#">14/01/2013</option>
+			                    	<option value="#">01/14/2013</option>
 			                  	</select>
 			                </div>
 				  		</div>
 				  	</div>
 					<div class="col-md-6">
 				  		<div class="form-group">
-			                <label for="project_industry">Livraison</label>
+			                <label for="project_industry">Delivery</label>
 			                <div class="select">
 			                  	<select id="project_industry" name="project_industry" class="form-control">
-			                    	<option value="#">25/01/2013</option>
+			                    	<option value="#">01/25/2013</option>
 			                  	</select>
 			                </div>
 				  		</div>
 				  	</div>
 			    </div>
-	        	<div class="checkbox p0">
-				  <label>
-				  	<div class="checked">
-				    	<input type="checkbox" value="">
+			    <br>
+	        	<div class="row">
+					<div class="col-md-12">
+						<label>
+				  			<input type="checkbox" value="" onClick="toggle(this)" /> Label
+		  				</label>
+	  				</div>
+				</div>
+				<br>
+			  	<div class="row">
+					<div class="col-md-12">
+						<label for="exampleInputEmail1">Project Description</label>
+			  			<textarea class="form-control" rows="3"></textarea>
 					</div>
-				    Utilisation de GestionAir
-				  </label>
-			    </div>
-			  	<label for="exampleInputEmail1">Description du projet</label>
-			  	<textarea class="form-control" rows="3"></textarea>
+				</div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Créer</button>
+	        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Add</button>
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div>
-	<!-- /.modal -->
 
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
