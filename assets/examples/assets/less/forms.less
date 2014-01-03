@@ -1,0 +1,28 @@
+// GENERAL //
+.form-control {background:#fff; border:1px solid #eee; box-shadow:none; color:#ccc; font-weight:300;}
+.form-group {margin-bottom:0;}
+label {font-size:13px; font-weight:400; }
+:focus, input:focus, textarea:focus, {box-shadow:none; border:none; outline:none;}
+.radio label, .checkbox label {line-height:25px;}
+input { cursor:pointer; }
+
+//////////////////////////////////
+
+// RADIO //
+input[type=radio] { width:15px; height:15px; background-color:#fafafa; border-radius:15px; border:3px double #fafafa; .transition;
+        -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;  }
+input[type=radio]:hover {background-color:@color-style; opacity:.4; border:3px double #fafafa; }
+input[type=radio]:checked { background-color:@color-style; opacity:1; border:3px double #fafafa; }
+
+
+// SELECT //
+select.form-control { position:relative; margin:0; background:transparent; border:1px solid #eee; -webkit-appearance: none; -moz-appearance: none; }
+.select { height:34px; overflow:hidden; background:url('../im/select.png') right no-repeat; background-color:#fff; border-radius:none; }
+
+
+// CHECKBOX //
+input[type=checkbox] { .glyphicon; .glyphicon-ok; color:#fafafa; font-size:13px; .transition; .border; background:#fafafa; width:15px; min-height:15px; margin-top:0; outline:none;
+        -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; }
+input[type=checkbox]:hover {color:@color-style; opacity:.4; outline:none; }
+input[type=checkbox]:checked { color:@color-style; opacity:1; outline:none; }
+

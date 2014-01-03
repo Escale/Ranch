@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Example - Lists</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1100" />
+
+	<link rel="icon" type="image/png" href="im/logo/favicon.png" />
+	<link rel="apple-touch-icon" href="im/logo/appleicon.png" />
+		
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" />
+	<meta property="og:image" content="http://www.gestionair.com/im/logo/logo-open-graph.jpg" />
+
+	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+
+	<script src="assets/less/less.js" type="text/javascript"></script>
+	<script language="JavaScript">
+		function toggle(source) {
+		  checkboxes = document.getElementsByName('foo');
+		  for(var i=0, n=checkboxes.length;i<n;i++) {
+		    checkboxes[i].checked = source.checked;
+		  }
+		}
+	</script>	
+</head>
+<body>
+
+	<header>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+			          <a href="../index.html" class="navbar-brand">
+			            <img src="im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
+			          </a>					
+          			</div>
+				</div>
+				<div class="navigation col-md-7">
+					<ul class="nav nav-pills text-center">
+					  	<li class="active"><a href="lists.html">Lists</a></li>
+					  	<li><a href="form.html">Form</a></li>
+					  	<li><a href="#" data-toggle="modal" data-target="#ajout-projet">Modal</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<form class="navbar-form navbar-left form-inline" role="search">
+				      	<div class="form-group btn-search">
+				        	<input type="text" class="form-control" placeholder="Search">
+				        	<button type="submit" class="search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+				      	</div>
+				    </form>
+
+				    <div class="dropdown pull-right">
+					 	<a data-toggle="dropdown" data-target="#" href="#">
+					    	<span class="glyphicon glyphicon-cog left"></span>
+					    	<span class="caret right"></span>
+					 	</a>
+					  	<ul class="dropdown-menu" role="menu">
+					    	<li><a href="connexion.html">Log In</a></li>
+					    	<li><a href="#">Configuration</a></li>
+					    	<li><a href="#">Log Out</a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="headband col-md-12">
+		<div class="col-md-2">
+			<h1>Title Page</h1>
+		</div>
+		<div class="col-md-10">
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-inbox"></span></button>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</section>
+
+	<section class="content col-md-12">
+
+		<aside class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="#" class="h2 collapsed" data-toggle="collapse" data-target="#nav">Dropdown<span class="caret pull-right"></span></a></li>
+				<div id="nav" class="collapse">
+					<ul class="nav nav-pills nav-stacked sub-menu h3">
+						<li><a href="#">Link</a></li>
+						<li><a href="#" class="active">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			    <li><a href="#" class="h2">Link</a></li>
+			    <li><a href="#" class="h2">Link</a></li>
+			</ul>
+		</aside>
+
+		<article class="component col-md-10">
+
+				<div class="category panel-heading">
+	            	<div class="col-md-1">
+	            		<span class="important-none pull-left"></span>
+	            		<label>
+					  		<input type="checkbox" value="" onClick="toggle(this)" />
+				  		</label>
+				    </div>
+			    	<a class="col-md-11 text-center">
+				    	<h2 class="col-md-3">Title</h2>
+				    	<h2 class="col-md-3">Users</h2>
+				    	<h2 class="col-md-2">Progress</h2>
+				    	<h2 class="col-md-2">Creation</h2>
+				    	<h2 class="col-md-2">Final</h2>
+				  	</a>
+			    </div>
+
+
+				<div class="panel-group accordion-toggle collapsed" id="accordion">
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-active pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" name="foo" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="#">
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<div class="col-md-2">
+										<div class="progress">
+								  			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								    			<span class="sr-only">60% Complete</span>
+								  			</div>
+										</div>
+						    		</div>
+						    		<div class="row text-center">
+										<h3 class="col-md-2">12/04/2013</h3>
+						    			<h3 class="col-md-2">12/08/2013</h3>
+							    		<div class="col-md-4">
+								    		<div class="progress-date">
+										  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										    		<span class="sr-only">60% Complete</span>
+										  		</div>
+											</div>
+										</div>
+									</div>
+									<div class="caret caret-tache pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseOne" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+
+
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-active pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" name="foo" />
+							  		</label>
+							  	</div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" title="#">
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<div class="col-md-2">
+										<div class="progress">
+								  			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								    			<span class="sr-only">60% Complete</span>
+								  			</div>
+										</div>
+						    		</div>
+						    		<div class="row text-center">
+										<h3 class="col-md-2">12/04/2013</h3>
+						    			<h3 class="col-md-2">12/08/2013</h3>
+							    		<div class="col-md-4">
+								    		<div class="progress-date">
+										  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										    		<span class="sr-only">60% Complete</span>
+										  		</div>
+											</div>
+										</div>
+									</div>
+									<div class="caret caret-tache pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseTwo" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-none pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" name="foo" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" title="#">
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<div class="col-md-2">
+										<div class="progress">
+								  			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								    			<span class="sr-only">60% Complete</span>
+								  			</div>
+										</div>
+						    		</div>
+						    		<div class="row text-center">
+										<h3 class="col-md-2">12/04/2013</h3>
+						    			<h3 class="col-md-2">12/08/2013</h3>
+							    		<div class="col-md-4">
+								    		<div class="progress-date">
+										  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										    		<span class="sr-only">60% Complete</span>
+										  		</div>
+											</div>
+										</div>
+									</div>
+									<div class="caret caret-tache pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseThree" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+
+				    <div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-none pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" name="foo" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" title="#">
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-3">Anim pariatur cliche reprehenderit.</h3>
+						    		<div class="col-md-2">
+										<div class="progress">
+								  			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								    			<span class="sr-only">60% Complete</span>
+								  			</div>
+										</div>
+						    		</div>
+						    		<div class="row text-center">
+										<h3 class="col-md-2">12/04/2013</h3>
+						    			<h3 class="col-md-2">12/08/2013</h3>
+							    		<div class="col-md-4">
+								    		<div class="progress-date">
+										  		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										    		<span class="sr-only">60% Complete</span>
+										  		</div>
+											</div>
+										</div>
+									</div>
+									<div class="caret caret-tache pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseFour" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+				</div>
+
+		</article>
+
+		<article class="component col-md-10">
+				<div class="category panel-heading">
+	            	<div class="col-md-1">
+	            	  <span class="important-none pull-left"></span>
+					  <label>
+					  	<input type="checkbox" name="all" value="" />
+					  </label>
+				    </div>
+			    	<a class="col-md-11 text-center">
+				    	<h2 class="col-md-4">Title</h2>
+				    	<h2 class="col-md-4">Users</h2>
+				    	<h2 class="col-md-2">Creation</h2>
+				  	</a>
+			    </div>
+
+
+				<div class="panel-group accordion-toggle collapsed" id="accordion">
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-none pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" title="#">
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+									<h3 class="col-md-2">12/04/2013</h3>
+						    		<div class="caret pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseFive" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-active pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" title="#">
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+									<h3 class="col-md-2">12/04/2013</h3>
+						    		<div class="caret pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseSix" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+					
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-active pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" title="#">
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+									<h3 class="col-md-2">12/04/2013</h3>
+						    		<div class="caret pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseSeven" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          		<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+					
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+				            	<div class="col-md-1">
+				            		<span class="important-none pull-left"></span>
+				            		<label>
+								  		<input type="checkbox" value="" />
+							  		</label>
+							    </div>
+					      		<a class="col-md-11 text-center collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseHeight" title="#">
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+						    		<h3 class="col-md-4">Anim pariatur cliche reprehenderit.</h3>
+									<h3 class="col-md-2">12/04/2013</h3>
+						    		<div class="caret pull-right"></div>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseHeight" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          		<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          		<div class="col-md-1">
+				          			<a href="form.html"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+				</div>
+		</article>
+	</section>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="ajout-projet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Ajouter un projet</h4>
+	        <hr>
+	      </div>
+	      <div class="modal-body">
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Structure</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Liste des structures</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Chargé de projet</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Liste des utilisateurs</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="form-group">
+			   		<label for="exampleInputEmail1">Nom du projet</label>
+			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Abilys">
+			  	</div>
+			  	<div class="form-group">
+			   		<label for="exampleInputEmail1">Type du projet</label>
+			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Application">
+			  	</div>
+			  	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Avancement</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Attente</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+					<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">&#201;tat commercial</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Prospect</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="row">
+				  	<div class="col-md-6">
+				  		<div class="form-group">
+			                <label for="project_industry">Démarrage</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">14/01/2013</option>
+			                  	</select>
+			                </div>
+				  		</div>
+				  	</div>
+					<div class="col-md-6">
+				  		<div class="form-group">
+			                <label for="project_industry">Livraison</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">25/01/2013</option>
+			                  	</select>
+			                </div>
+				  		</div>
+				  	</div>
+			    </div>
+	        	<div class="checkbox p0">
+				  <label>
+				  	<div class="checked">
+				    	<input type="checkbox" value="">
+					</div>
+				    Utilisation de GestionAir
+				  </label>
+			    </div>
+			  	<label for="exampleInputEmail1">Description du projet</label>
+			  	<textarea class="form-control" rows="3"></textarea>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Créer</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/bootstrap-3.0.0/js/dropdown.js" type="text/javascript"></script>
+
+</body>
+</html>

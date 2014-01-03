@@ -1,0 +1,30 @@
+@header-height: 		50px;
+
+///////////////////////////////////
+
+header { background:@header-background; height:@header-height; width:100%; position:fixed; z-index:5; top:0; padding-right:10px; } 
+header .logo { display:block; line-height:@header-height; }
+header .logo a {  font-family:'Bitter'; color:#fff; font-size:30px; line-height:30px; text-transform:uppercase; padding:11px 15px; }
+header .logo img { margin-right:10px; }
+
+header .form-control {background:@header-hover; border:none; box-shadow:none; color:@btn-search-color; font-weight:300;}
+
+header .nav-pills > li { .m0; }
+header .nav-pills > li:first-child { margin-left:0; }
+header .nav-pills > li:last-child { margin-right:0; }
+
+header .nav-pills > li > a { color:@header-link; width:150px; font-size:16px; font-weight: 300; line-height:30px; border-radius:0; }
+header .nav-pills > li > a:hover, 
+	   .nav-pills > li.active > a { background:@header-hover; color:#fff; }
+header .nav-pills > li.active > a:hover, 
+	   .nav-pills > li.active > a:focus { color:@header-color; background:@header-hover; }
+
+header .glyphicon-cog { font-size:20px; color:@header-color; line-height:50px; }
+
+header button.dropdown span.glyphicon { color:@header-color; font-size: 20px; line-height:35px; margin-right:5px; }
+header button.dropdown span.caret { border-top-color:@header-color; margin-bottom:10px; }
+header .dropdown:hover span.glyphicon { color:#fff; }
+header .dropdown-menu > li > a { line-height:30px; }
+header .dropdown-menu > li > a:hover { background:@btn-background; color:@text-color; }
+
+header form .form-control { height:25px; margin-top:5px; }

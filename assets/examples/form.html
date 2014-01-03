@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Example - form</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1100" />
+
+	<link rel="canonical" href="http://" />
+	<link rel="icon" type="image/png" href="im/logo/favicon.png" />
+	<link rel="apple-touch-icon" href="im/logo/appleicon.png" />
+		
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://" />
+	<meta property="og:image" content="http://www.gestionair.com/im/logo/logo-open-graph.jpg" />
+
+	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+
+	<script src="assets/less/less.js" type="text/javascript"></script>
+
+	
+
+
+</head>
+<body>
+
+	<header>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+			          <a href="../index.html" class="navbar-brand">
+			            <img src="im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
+			          </a>					
+          			</div>
+				</div>
+				<div class="navigation col-md-7">
+					<ul class="nav nav-pills text-center">
+					  	<li><a href="lists.html">Lists</a></li>
+					  	<li class="active"><a href="form.html">Form</a></li>
+					  	<li><a href="#" data-toggle="modal" data-target="#ajout-projet">Modal</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<form class="navbar-form navbar-left form-inline" role="search">
+				      	<div class="form-group btn-search">
+				        	<input type="text" class="form-control" placeholder="Search">
+				        	<button type="submit" class="search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+				      	</div>
+				    </form>
+
+				    <div class="dropdown pull-right">
+					 	<a data-toggle="dropdown" data-target="#" href="#">
+					    	<span class="glyphicon glyphicon-cog left"></span>
+					    	<span class="caret right"></span>
+					 	</a>
+					  	<ul class="dropdown-menu" role="menu">
+					    	<li><a href="connexion.html">Log In</a></li>
+					    	<li><a href="#">Configuration</a></li>
+					    	<li><a href="#">Log Out</a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="headband col-md-12">
+			<div class="col-md-2">
+				<h1>Title Page</h1>
+			</div>
+			<div class="col-md-10">
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+			</div>
+	</section>
+
+	<section class="content col-md-12">
+
+		<aside class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="#" class="h2 collapsed" data-toggle="collapse" data-target="#nav">Dropdown<span class="caret pull-right"></span></a></li>
+				<div id="nav" class="collapse">
+					<ul class="nav nav-pills nav-stacked sub-menu h3">
+						<li><a href="#">Link</a></li>
+						<li><a href="#" class="active">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			    <li><a href="#" class="h2">Link</a></li>
+			    <li><a href="#" class="h2">Link</a></li>
+			</ul>
+		</aside>
+
+		<div class="component form col-md-10">
+
+				<div class="row">
+					<div class="col-md-4">
+						<h2>Company Name</h2>
+						<br>
+						<form role="form">
+						  	<div class="form-group">
+						   		<label for="exampleInputEmail1">Project Name</label>
+						   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Abilys">
+						  	</div>
+						  	<br>
+						  	<div class="form-group">
+						    	<label for="exampleInputEmail1">Type</label>
+						    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Application">
+						  	</div>
+						  	<br>
+						  	<div class="form-group">
+				                <label for="project_industry">Organisation</label>
+				                <div class="select">
+				                  	<select id="project_industry" name="project_industry" class="form-control">
+				                    	<option value="#">Example</option>
+				                  	</select>
+				                </div>
+					  		</div>
+					  		<br>
+						  	<div class="form-group">
+				                <label for="project_industry">Project Manager</label>
+				                <div class="select">
+				                  	<select id="project_industry" name="project_industry" class="form-control">
+				                    	<option value="#">Somebody</option>
+				                  	</select>
+				                </div>
+					  		</div>
+					  		<br>
+							<div class="row">
+							  	<div class="col-md-6">
+							  		<div class="form-group">
+						                <label for="project_industry">Progress</label>
+						                <div class="select">
+						                  	<select id="project_industry" name="project_industry" class="form-control">
+						                    	<option value="#">Archive</option>
+						                  	</select>
+						                </div>
+							  		</div>
+							  	</div>
+								<div class="col-md-6">
+							  		<div class="form-group">
+						                <label for="project_industry">Financial Statement</label>
+						                <div class="select">
+						                  	<select id="project_industry" name="project_industry" class="form-control">
+						                    	<option value="#">Pay</option>
+						                  	</select>
+						                </div>
+							  		</div>
+							  	</div>
+							</div>
+							<br>
+						    <div class="row">
+							  	<div class="col-md-6">
+							  		<div class="form-group">
+						                <label for="project_industry">Beginning</label>
+						                <div class="select">
+						                  	<select id="project_industry" name="project_industry" class="form-control">
+						                    	<option value="#">01/14/2013</option>
+						                  	</select>
+						                </div>
+							  		</div>
+							  	</div>
+								<div class="col-md-6">
+							  		<div class="form-group">
+						                <label for="project_industry">Delivery</label>
+						                <div class="select">
+						                  	<select id="project_industry" name="project_industry" class="form-control">
+						                    	<option value="#">01/25/2013</option>
+						                  	</select>
+						                </div>
+							  		</div>
+							  	</div>
+						    </div>
+						    <br>
+							<div class="row">
+								<div class="col-md-12">
+									<label>
+							  			<input type="checkbox" value="" onClick="toggle(this)" /> Label
+					  				</label>
+				  				</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-12">
+									<label for="exampleInputEmail1">Project Description</label>
+						  			<textarea class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			<br>
+				<div class="panel-group accordion-toggle collapsed" id="accordion">
+
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				        	<div class="panel-heading">
+					      		<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="#">
+						          	<h2>Commercial Follow-up</h2>
+									<span class="caret caret-form"></span>
+						  		</a>
+					   		</div>
+				        </div>
+				        <div id="collapseOne" class="panel-collapse collapse">
+				          	<div class="panel-body">	
+					          	<form>
+									<div class="row">
+										<div class="col-md-2 form-group">
+									    	<label for="exampleInputEmail1">N&#176; Estimate</label>
+									   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="0123456789">
+									  	</div>
+									  	<div class="col-md-2 form-group">
+									    	<label for="exampleInputEmail1">Total</label>
+									    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="2 500">
+									  	</div>
+									  	<div class="col-md-2 form-group">
+									    	<label for="exampleInputEmail1">Statute</label>
+									    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Chaud">
+									  	</div>
+								  	</div>
+								  	<div class="row">
+										<div class="col-md-2 form-group">
+									    	<label for="exampleInputEmail1">N&#176; contract</label>
+									   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="0123456789">
+									  	</div>
+									  	<div class="col-md-2 form-group">
+									    	<label for="exampleInputEmail1">Other</label>
+									    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="1 500">
+									  	</div>
+								  	</div>
+								</form>
+				          	</div>
+				        </div>
+				    </div>
+						<br>
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						          <h2>Financial Follow-up</h2>
+									<span class="caret caret-form"></span>
+						        </a>
+						    </div>
+				        </div>
+				        <div id="collapseTwo" class="panel-collapse collapse">
+				          	<div class="panel-body">
+				            	<h2><strong>Invoicing</strong></h2>
+								<table class="table">
+							        <thead>
+							            <tr>
+								            <th>N&#176; Invoice</th>
+								            <th>Invoice Date</th>
+								            <th>Payment Date</th>
+								            <th>Loan Date</th>
+								            <th>Before Taxe Total</th>
+								            <th>VAT</th>
+								            <th>All Taxes Total</th>
+								            <th>Comment</th>
+								            <th>Means of Payment</th>
+							            </tr>
+							        </thead>
+							        <tfoot>
+							        	<tr class="total-paye">
+								            <td></td>
+								            <td></td>
+								            <td></td>
+								            <td><strong>Total Amount</strong></td>
+								            <td>2000, 00</td>
+								            <td>300</td>
+								            <td>3000, 00</td>
+								            <td></td>
+								            <td></td>
+								        </tr>
+							            <tr class="total">
+								            <td></td>
+								            <td></td>
+								            <td></td>
+								            <td><strong>Total</strong></td>
+								            <td>2000, 00</td>
+								            <td>300</td>
+								            <td>3000, 00</td>
+								            <td></td>
+								            <td></td>
+							            </tr>
+							        </tfoot>
+							        <tbody>
+								        <tr>
+								            <td>123456</td>
+								            <td>10/15/13</td>
+								            <td>10/16/13</td>
+								            <td>10/17/13</td>
+								            <td>2000, 00</td>
+								            <td>300</td>
+								            <td>3000, 00</td>
+								            <td>Lorem ipsum</td>
+								            <td>Chèque</td>
+								        </tr>
+								        <tr>
+								            <td>123456</td>
+								            <td>15/10/13</td>
+								            <td>16/10/13</td>
+								            <td>17/10/13</td>
+								            <td>2000, 00</td>
+								            <td>300</td>
+								            <td>3000, 00</td>
+								            <td>Lorem ipsum</td>
+								            <td>Cheque</td>
+								        </tr>
+								        <tr>
+								            <td>123456</td>
+								            <td>10/15/13</td>
+								            <td>16/10/13</td>
+								            <td>17/10/13</td>
+								            <td>2000, 00</td>
+								            <td>300</td>
+								            <td>3000, 00</td>
+								            <td>Lorem ipsum</td>
+								            <td>Cheque</td>
+								        </tr>
+							        </tbody>
+							    </table>
+							    <h2>Spending</h2>
+							    <p>None</p>
+							    <h2>Profit Margin</h2>
+							    <p>1550 &#36; (100,00 &#36;)</p>
+				          	</div>
+				        </div>
+				    </div>
+						<br>
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						          <h2>Notes</h2>
+									<span class="caret caret-form"></span>
+						        </a>
+						    </div>
+				        </div>
+				        <div id="collapseThree" class="panel-collapse collapse">
+				          	<div class="panel-body">
+								<button type="submit" class="btn btn-default mb10p"><span class="glyphicon glyphicon-plus"></span></button>
+								<table class="table table-striped">
+							        <tbody>
+								        <tr>
+								            <td>Note n&#176;1: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Note n&#176;2: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Note n&#176;3: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+							        </tbody>
+							    </table>
+				          	</div>
+				        </div>
+				    </div>
+						<br>
+				    <div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+						          <h2>Tasks</h2>
+									<span class="caret caret-form"></span>
+						        </a>
+						    </div>
+				        </div>
+				        <div id="collapseFour" class="panel-collapse collapse">
+				          	<div class="panel-body">
+								<button type="submit" class="btn btn-default mb10p"><span class="glyphicon glyphicon-plus"></span></button>
+								<table class="table table-striped">
+							        <tbody>
+								        <tr>
+								            <td>Task n&#176;1: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Task n&#176;2: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Task n&#176;3: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+							        </tbody>
+							    </table>
+				          	</div>
+				        </div>
+				    </div>
+						<br>
+				    <div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+						          <h2>Hosting</h2>
+									<span class="caret caret-form"></span>
+						        </a>
+						    </div>
+				        </div>
+				        <div id="collapseFive" class="panel-collapse collapse">
+				          	<div class="panel-body">
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+								<table class="table table-striped">
+							        <tbody>
+								        <tr>
+								            <td>Hosting n&#176;1: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Hosting n&#176;2: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+								        <tr>
+								            <td>Hosting n&#176;3: Lorem ipsum lorem ipsum lorem ipsum</td>
+								        </tr>
+							        </tbody>
+							    </table>
+				          	</div>
+				        </div>
+				    </div>
+						<br>
+					<div class="panel panel-default">
+				        <div class="accordion-toggle">
+				            <div class="panel-heading">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+						          <h2>Praticals  Informations</h2>
+									<span class="caret caret-form"></span>
+						        </a>
+						    </div>
+				        </div>
+				        <div id="collapseSix" class="panel-collapse collapse">
+				          	<div class="panel-body panel-text">
+				          		<div class="col-md-11">
+				          			<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+				          		</div>
+				          	</div>
+				        </div>
+				    </div>
+					<br><br>
+				</div>
+		</div>
+	</section>
+	
+		<!-- Modal -->
+	<div class="modal fade" id="ajout-projet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Add a project</h4>
+	        <hr>
+	      </div>
+	      <div class="modal-body">
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Organisation</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Example</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Project Manager</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">users list</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="form-group">
+			   		<label for="exampleInputEmail1">Project Name</label>
+			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Abilys">
+			  	</div>
+			  	<div class="form-group">
+			   		<label for="exampleInputEmail1">Type</label>
+			   		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Application">
+			  	</div>
+			  	<div class="row">
+	        		<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Progress</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Pending</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+					<div class="col-md-6">
+	        			<div class="form-group">
+		                <label for="project_industry">Commercial Statement</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">Prospect</option>
+			                  	</select>
+			                </div>
+				  		</div>
+					</div>
+	        	</div>
+	        	<div class="row">
+				  	<div class="col-md-6">
+				  		<div class="form-group">
+			                <label for="project_industry">Beginning</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">01/14/2013</option>
+			                  	</select>
+			                </div>
+				  		</div>
+				  	</div>
+					<div class="col-md-6">
+				  		<div class="form-group">
+			                <label for="project_industry">Delivery</label>
+			                <div class="select">
+			                  	<select id="project_industry" name="project_industry" class="form-control">
+			                    	<option value="#">01/25/2013</option>
+			                  	</select>
+			                </div>
+				  		</div>
+				  	</div>
+			    </div>
+			    <br>
+	        	<div class="row">
+					<div class="col-md-12">
+						<label>
+				  			<input type="checkbox" value="" onClick="toggle(this)" /> Label
+		  				</label>
+	  				</div>
+				</div>
+				<br>
+			  	<div class="row">
+					<div class="col-md-12">
+						<label for="exampleInputEmail1">Project Description</label>
+			  			<textarea class="form-control" rows="3"></textarea>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Add</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/bootstrap-3.0.0/js/dropdown.js" type="text/javascript"></script>
+
+</body>
+</html>
