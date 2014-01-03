@@ -200,7 +200,13 @@ button[type=submit] { padding:14px 12px;}
  *
  * Separated section of content at the bottom of all pages, save the homepage.
  */
-
+.bs-footer-index {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #303030;
+}
 .bs-footer {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -209,7 +215,7 @@ button[type=submit] { padding:14px 12px;}
   text-align: center;
   background-color: #303030;
 }
-.bs-footer a {
+.bs-footer a, .bs-footer-index a {
   color:#5c5c5c;
   font-weight: 400;
 }
@@ -227,10 +233,10 @@ button[type=submit] { padding:14px 12px;}
 }
 
 @media (min-width: 768px) {
-  .bs-footer {
+  .bs-footer, .bs-footer-index {
     text-align: left;
   }
-  .bs-footer p {
+  .bs-footer p, .bs-footer-index p {
     margin-bottom: 0;
     color:#fff;
   }
