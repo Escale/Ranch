@@ -268,6 +268,9 @@ button[type=submit] { padding:14px 12px;}
 .bs-social-buttons .twitter-follow-button {
   width: 225px !important;
 }
+.bs-social-buttons .follow-btn { 
+  width:215px;
+}
 .bs-social-buttons .twitter-share-button {
   width: 98px !important;
 }
