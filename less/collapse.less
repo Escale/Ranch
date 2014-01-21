@@ -7,27 +7,34 @@
 .panel-default > .panel-heading + .panel-collapse .panel-body { border-top:none; }
 .panel-heading { height:30px; padding:10px 10px 25px 10px; background:none; border-color:@border-color; color:@text-color; }
 .panel-group .panel + .panel { margin-top:0; }
+
 ///////////////////////////////////
 
 // Style //
-.component .panel-heading { .border-bottom; .transition; }
-.component .panel-heading h3, 
-	.component .panel-heading h2 { margin:0; }
-.component .panel-heading + .panel-body { margin-bottom:0; }
-.component .panel-heading > .caret { margin:5px 0; }
-.component .panel-body {margin: 0 0 20px 0; border:none; padding:10px; }
-.component .panel-text { .border-left; margin: 20px 0 20px 100px; padding-left:30px; padding-top:10px; padding-bottom:0; }
-.component .panel-heading:hover { background-color:@panel-heading-hover; .transition;}
-.component .category { padding-bottom:25px; }
-.component .category,
-	.component .category:hover { background:none; } 
-.component .in,
-.component .collapsing {.border-bottom;}
-.component .panel-heading .checkbox { margin:0; }
-.component .panel-heading .checkbox:first-child { margin-top:-5px; }
-.component .panel-heading .checkbox { margin-top:-2px; }
+.component {
+	.panel-heading { 
+		.border-bottom; .transition; margin-bottom:0;
+		&:hover { background-color:@panel-heading-hover; .transition;}
+		h2, h3 { margin:0; }
+		.panel-body { margin-bottom:0; }
+		.caret { margin:5px 0; }
+		.checkbox { 
+			margin:0; margin-top:-2px;
+			&:first-child { margin-top:-5px; }
+		}
+	}
+	.panel-body {margin: 0 0 20px 0; border:none; padding:10px; }
+	.panel-text { .border-left; margin: 20px 0 20px 100px; padding-left:30px; padding-top:10px; padding-bottom:0; }
+	.category { 
+		padding-bottom:25px; background:none; 
+		&:hover { background:none;  }
+	}
+	.in { .border-bottom; }
+	.collapsing {.border-bottom;}
+}
 
-
-.form .panel-heading {padding-bottom:8px; background:#fdfdfd;}
-.form .panel-heading:hover {background:#fafafa;}
+.form .panel-heading {
+	padding-bottom:8px; background:#fdfdfd;
+	&:hover {background:#fafafa;}
+}
 
