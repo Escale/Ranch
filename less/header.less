@@ -2,24 +2,28 @@
 
 ///////////////////////////////////
 
-header { background:@header-background; height:@header-height; width:100%; position:fixed; z-index:5; top:0; padding-right:10px; } 
-header .logo { display:block; line-height:@header-height; }
-header .logo a { color: #fff; font-family:"Bitter"; font-size:25px; text-transform:uppercase; }
-header .logo img { margin-top:-5px; margin-right:10px; }
-header .form-control {background:@header-hover; border:none; box-shadow:none; color:@btn-search-color; font-weight:300;}
+header { 
+	background:@header-background; height:@header-height; width:100%; position:fixed; z-index:5; top:0; padding-right:10px; 
+	.logo { 
+		display:block; line-height:@header-height; 
+		a { color: #fff; font-family:"Bitter"; font-size:25px; text-transform:uppercase; }
+		img { margin-top:-5px; margin-right:10px; }
+	}
+	.form-control {background:@header-hover; border:none; box-shadow:none; color:@btn-search-color; font-weight:300;}
+	.nav-pills > li { 
+		.m0; 
+		&:first-child { margin-left:0; }
+		&:last-child { margin-right:0; }
+		a { 
+			color:@header-link; width:150px; font-size:16px; font-weight: 300; line-height:30px; border-radius:0; 
+			&:hover { background:@header-hover; color:#fff; }
+		}
+	}
+	.nav-pills > li.active > a { 
+		background:@header-hover; color:#fff; 
+		&:hover, &:focus  { color:@header-color; background:@header-hover; }
+	}
+	.glyphicon-cog { font-size:20px; color:@header-color; line-height:50px; }
+	form .form-control { height:25px; margin-top:5px; }
+} 
 
-header .nav-pills > li { .m0; }
-header .nav-pills > li:first-child { margin-left:0; }
-header .nav-pills > li:last-child { margin-right:0; }
-
-header .nav-pills > li > a { color:@header-link; width:150px; font-size:16px; font-weight: 300; line-height:30px; border-radius:0; }
-header .nav-pills > li > a:hover, 
-	   .nav-pills > li.active > a { background:@header-hover; color:#fff; }
-header .nav-pills > li.active > a:hover, 
-	   .nav-pills > li.active > a:focus { color:@header-color; background:@header-hover; }
-
-header .glyphicon-cog { font-size:20px; color:@header-color; line-height:50px; }
-
-
-
-header form .form-control { height:25px; margin-top:5px; }
