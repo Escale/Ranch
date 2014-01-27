@@ -1,29 +1,37 @@
-@header-height: 		50px;
-
-///////////////////////////////////
-
 header { 
+	.make-row(0);
 	background:@header-background; height:@header-height; width:100%; position:fixed; z-index:5; top:0; padding-right:10px; 
 	.logo { 
+		.make-lg-column(2);
 		display:block; line-height:@header-height; 
-		a { color: #fff; font-family:"Bitter"; font-size:25px; text-transform:uppercase; }
+		a { .uppercase; .left; color: #fff; font-size: 25px; line-height: 20px; padding: 15px 15px 0 15px; }
 		img { margin-top:-5px; margin-right:10px; }
 	}
-	.form-control {background:@header-hover; border:none; box-shadow:none; color:@btn-search-color; font-weight:300;}
-	.nav-pills > li { 
-		.m0; 
-		&:first-child { margin-left:0; }
-		&:last-child { margin-right:0; }
-		a { 
-			color:@header-link; width:150px; font-size:16px; font-weight: 300; line-height:30px; border-radius:0; 
-			&:hover { background:@header-hover; color:#fff; }
+	nav { 
+		.make-lg-column(7); .make-md-column(6);
+		> ul { 
+			.nav; .nav-pills;
+			> li:first-child { margin-left:0; }
+			> li:last-child { margin-right:0; }
+			> li {
+				> a { 
+					color: @header-link; width: 150px; font-size: 16px; font-weight: 300; line-height: 30px; border-radius: 0; text-align: center;
+					&:hover { background: @header-hover; color: #fff; }
+				}
+				&.active { 
+					> a {
+						background:@header-hover; color:#fff; 
+					 	&:hover,
+					 	&:focus { color:@header-color; background:@header-hover; }
+					}
+				}
+				+ li {
+					margin-left:1px;
+				}
+			}
+
 		}
 	}
-	.nav-pills > li.active > a { 
-		background:@header-hover; color:#fff; 
-		&:hover, &:focus  { color:@header-color; background:@header-hover; }
-	}
-	.glyphicon-cog { font-size:20px; color:@header-color; line-height:50px; }
+	.form-control { background:@header-hover; border:none; box-shadow:none; color:@btn-search-color; font-weight:300;}
 	form .form-control { height:25px; margin-top:5px; }
-} 
-
+}

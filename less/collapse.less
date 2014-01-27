@@ -13,7 +13,7 @@
 // Style //
 .component {
 	.panel-heading { 
-		.border-bottom; .transition; margin-bottom:0;
+		border-bottom:1px solid @border-color; .transition; margin-bottom:0;
 		&:hover { background-color:@panel-heading-hover; .transition;}
 		h2, h3 { margin:0; }
 		.panel-body { margin-bottom:0; }
@@ -24,13 +24,13 @@
 		}
 	}
 	.panel-body {margin: 0 0 20px 0; border:none; padding:10px; }
-	.panel-text { .border-left; margin: 20px 0 20px 100px; padding-left:30px; padding-top:10px; padding-bottom:0; }
+	.panel-text { border-bottom:1px solid @border-color; margin: 20px 0 20px 100px; padding-left:30px; padding-top:10px; padding-bottom:0; }
 	.category { 
 		padding-bottom:25px; background:none; 
 		&:hover { background:none;  }
 	}
-	.in { .border-bottom; }
-	.collapsing {.border-bottom;}
+	.in { border-bottom:1px solid @border-color; }
+	.collapsing { border-bottom:1px solid @border-color; }
 }
 
 .form .panel-heading {

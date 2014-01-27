@@ -23,77 +23,39 @@
 	<script src="../assets/less/less.js" type="text/javascript"></script>
 </head>
 <body>
-
 	<header>
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-2">
-					<div class="logo">
-			          <a href="../docs/index.html" class="navbar-brand">
-			            <img src="../assets/im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
-			          </a>					
-          			</div>
-				</div>
-				<div class="navigation col-md-7">
-					<ul class="nav nav-pills text-center">
-					  	<li><a href="lists.html">Lists</a></li>
-					  	<li><a href="form.html">Form</a></li>
-					  	<li><a href="#" data-toggle="modal" data-target="#ajout-projet">Modal</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<form class="navbar-form navbar-left form-inline" role="search">
-				      	<div class="form-group btn-search">
-				        	<input type="text" class="form-control" placeholder="Search">
-				        	<button type="submit" class="search pull-right"><span class="glyphicon glyphicon-search"></span></button>
-				      	</div>
-				    </form>
-
-				    <div class="dropdown pull-right">
-					 	<a data-toggle="dropdown" data-target="#" href="#">
-					    	<span class="glyphicon glyphicon-cog left"></span>
-					    	<span class="caret right"></span>
-					 	</a>
-					  	<ul class="dropdown-menu" role="menu">
-					    	<li><a href="connexion.html">Log In</a></li>
-					    	<li><a href="#">Configuration</a></li>
-					    	<li><a href="#">Log Out</a></li>
-					  	</ul>
-					</div>
-				</div>
-			</div>
+		<div class="logo">
+			<a href="../docs/index.html">
+				<img src="../assets/im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
+			</a>					
 		</div>
 	</header>
-
-	<section class="connexion col-md-12">
-		<div class="col-md-2 col-md-offset-5">
+	<div class="login-box">
+		<form role="form">
 			<h1 class="text-center">Log In</h1>
-			<form role="form">
-				<div class="form-group">
-				    <label for="identifiant">Name</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Identifiant">
-				</div>
-				<div class="form-group">
-				    <label for="exampleInputPassword1">Password</label>	
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
-				</div>
-				<a href="#"><small class="pull-right mt10p">Forgot passsword &#63;</small></a>
-				<br>
-				<div class="checkbox p0">
-				  <label>
-				  	<div class="checked"><input type="checkbox" value=""></div>
-				    Remember me
-				  </label>
-			    </div>
-				<br><br>
-				<div class="text-center">
-					<button type="button" class="btn btn-primary uppercase" data-dismiss="modal">Connexion</button>
-				</div>
-			</form>
-		</div>
-	</section>
+			<div class="form-group">
+				<label for="identifiant">Name</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Identifiant">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>	
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+			</div>
+			
+			<div class="checkbox">
+				<label>
+					<div class="checked"><input type="checkbox" value=""></div>
+					Remember me
+				</label>
+			</div>
+			<a href="#"><small class="pull-right">Forgot password ?</small></a>
+			<div class="text-center">
+				<button type="button" class="btn btn-primary uppercase text-center" data-dismiss="modal">Connexion</button>
+			</div>
+		</form>
+	</div>
 
-		<!-- Modal -->
+	<!-- Modal -->
 	<div class="modal fade" id="ajout-projet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">

@@ -26,56 +26,45 @@
 <body>
 
 	<header>
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-2">
-					<div class="logo">
-			          <a href="../docs/index.html" class="navbar-brand">
-			            <img src="../assets/im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
-			          </a>					
-          			</div>
-				</div>
-				<div class="navigation col-md-7">
-					<ul class="nav nav-pills text-center">
-					  	<li class="active"><a href="lists.html">Lists</a></li>
-					  	<li><a href="form.html">Form</a></li>
-					  	<li><a href="#" data-toggle="modal" data-target="#ajout-projet">Modal</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<form class="navbar-form navbar-left form-inline" role="search">
-				      	<div class="form-group btn-search">
-				        	<input type="text" class="form-control" placeholder="Search">
-				        	<button type="submit" class="search pull-right"><span class="glyphicon glyphicon-search"></span></button>
-				      	</div>
-				    </form>
-
-				    <div class="dropdown pull-right">
-					 	<a data-toggle="dropdown" data-target="#" href="#">
-					    	<span class="glyphicon glyphicon-cog left"></span>
-					    	<span class="caret right"></span>
-					 	</a>
-					  	<ul class="dropdown-menu" role="menu">
-					    	<li><a href="connexion.html">Log In</a></li>
-					    	<li><a href="#">Configuration</a></li>
-					    	<li><a href="#">Log Out</a></li>
-					  	</ul>
-					</div>
-				</div>
-			</div>
+		<div class="logo">
+			<a href="../docs/index.html">
+				<img src="../assets/im/logo/logo@2x.png" alt="Ranch Logo" width="30" height="30" class="icon left">Ranch        
+			</a>					
 		</div>
+		<nav>
+			<ul>
+			  	<li class="active"><a href="lists.html">Lists</a></li>
+			  	<li><a href="form.html">Form</a></li>
+			  	<li><a href="#" data-toggle="modal" data-target="#ajout-projet">Modal</a></li>
+			</ul>
+		</nav>
+		<div class="dropdown pull-right">
+			<a data-toggle="dropdown" data-target="#" href="#">
+				<span class="glyphicon glyphicon-cog left"></span>
+				<span class="caret right"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="connexion.html">Log In</a></li>
+				<li><a href="#">Configuration</a></li>
+				<li><a href="#">Log Out</a></li>
+			</ul>
+		</div>
+		<form class="navbar-form navbar-left form-inline pull-right" role="search">
+			<div class="form-group btn-search">
+				<input type="text" class="form-control" placeholder="Search">
+				<button type="submit" class="search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+			</div>
+		</form>
 	</header>
 
-	<section class="headband col-md-12">
-		<div class="col-md-2">
-			<h1>Title Page</h1>
+	<div class="headband">
+		<h1>Title Page</h1>
+		<div class="btn-group">
+			<button class="btn btn-default glyphicon glyphicon-plus"></button>
+			<button class="btn btn-default glyphicon glyphicon-inbox"></button>
+			<button class="btn btn-default glyphicon glyphicon-trash"></button>
 		</div>
-		<div class="col-md-10">
-			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-inbox"></span></button>
-			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
-		</div>
-	</section>
+	</div>
 
 	<section class="content col-md-12">
 

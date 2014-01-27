@@ -1,6 +1,15 @@
 // STYLES //
 .text-shadow { text-shadow: 1px 1px 0 darken(@btn-background, 10%); }
 .transition {-webkit-transition: all .1s linear; -moz-transition: all .1s linear; -ms-transition: all .1s linear; -o-transition: all .1s linear; transition: all .1s linear; }
+//.uppercase { text-transform: uppercase; }
+
+// FLOAT //
+.right { float: right; }
+.left { float: left; }
+
+// PAGE
+html { height: 100%;}
+body { height: 100%; margin: 0; padding: 50px 0 0 0; }
 
 // TITLE //
 h1,.h1 { font-size: 18px; color:@h1-color; text-transform: uppercase; }
@@ -30,7 +39,7 @@ tr.total-paye {background-color:@table-total-paye-bg;}
 
 // IMPORTANT //
 .important { display:inline-block; height:22px; width:4px; margin-top: -4px; margin-right:35px; }
-.important-none { .important; background:@important-color; .border; }
+.important-none { .important; background:@important-color; border:1px solid @border-color; }
 .important-active {  .important; background:@color-style; }
 
 
