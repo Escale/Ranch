@@ -1,7 +1,6 @@
 // STYLES //
 .text-shadow { text-shadow: 1px 1px 0 darken(@btn-background, 10%); }
 .transition {-webkit-transition: all .1s linear; -moz-transition: all .1s linear; -ms-transition: all .1s linear; -o-transition: all .1s linear; transition: all .1s linear; }
-//.uppercase { text-transform: uppercase; }
 
 // FLOAT //
 .right { float: right; }
@@ -38,13 +37,83 @@ tr.total {background-color:@table-total-bg;}
 tr.total-paye {background-color:@table-total-paye-bg;}
 
 // IMPORTANT //
-.important { display:inline-block; height:22px; width:4px; margin-top: -4px; margin-right:35px; }
-.important-none { .important; background:@important-color; border:1px solid @border-color; }
-.important-active {  .important; background:@color-style; }
+.important { height:15px; width:4px; background:@important-color; border:1px solid @border-color; }
+.important-default { background:@important-color; }
+.important-primary { border-color:@color-style; background:@color-style; }
+.important-success { }
+.important-info { }
+.important-warning { }
+.important-danger { }
+
+//// @TODO
 
 
+.main { .make-row(0); }
+section { padding-top:45px; padding:45px 15px; }
 
+// TABLE //
+.table {
+	//.table-hover
+	> thead {
+		> tr {
+			> td,
+			> th {
+				.uppercase;
+				font-size:12px;
+				font-weight:700;
+				line-height:26px;
+				border-color: @border-color;
+				vertical-align: middle;
+				&.td-small {
+					width:10px;
+				}
+			}
 
+		}
+	}
+	> tbody {
+		> tr {
+			> td,
+			> th {
+				//line-height:26px;
+				vertical-align: middle;
+				border-color: @border-color;
+				> label {
+					margin-bottom:0;
+					> input[type=checkbox] {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// CARET //
+.caret { 
+	margin-left: 5px; 
+	margin-top:5px; 
+	border-top-color:@caret-color; 
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg); /* IE 9 */ 
+	-webkit-transform:rotate(0deg); /* Safari and Chrome */
+}
+a:hover .caret { 
+	margin-top:5px; 
+	border-top-color:@caret-color;
+	transform:rotate(0deg); 
+	-ms-transform:rotate(0deg); /* IE 9 */ 
+	-webkit-transform:rotate(0deg); /* Safari and Chrome */}
+.caret-form { 
+	float:right; 
+	margin-top:-10px !important; }
+.caret-tache { margin-top:-20px !important; }
+.collapsed > .caret { 
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); /* IE 9 */
+	-webkit-transform:rotate(-90deg); 
+	.transition;
+}
 
 
 
