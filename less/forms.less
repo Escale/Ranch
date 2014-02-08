@@ -10,10 +10,10 @@ input { cursor:pointer; }
 
 // RADIO //
 input[type=radio] { 
-	width:15px; height:15px; background-color:#fafafa; border-radius:15px; border:3px double #fafafa; .transition; margin-top:3px;
+	width:12px; height:12px; background:#fafafa; border-radius:12px; border:1px solid @border-color; .transition; margin:6px 0 0;
     -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;  
-	&:hover {background-color:@color-style; opacity:.4; border:3px double #fafafa; }
-	&:checked { background-color:@color-style; opacity:1; border:3px double #fafafa; }
+	&:hover {background-color:@color-style; opacity:.4; }
+	&:checked { background-color:@color-style; opacity:1; border:1px double @border-color; }
 }
 .input-group-addon input[type="radio"] { margin-top:3px; }
 
@@ -31,4 +31,6 @@ input[type=checkbox] {
 	&:checked { color:@color-style; opacity:1; outline:none; }
 }
 
+// INPUT-GROUP-ADDON
+.input-group-addon { background-color:#fafafa; border: 1px solid @border-color; color:#ccc; }
 
