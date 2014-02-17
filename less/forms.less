@@ -19,8 +19,15 @@ input[type=radio] {
 
 
 // SELECT //
-select.form-control { position:relative; margin:0; background:transparent; border:1px solid #eee; -webkit-appearance: none; -moz-appearance: none; }
-.select { height:34px; overflow:hidden; background:url('../assets/im/select.png') right no-repeat; background-color:#fff; border-radius:none; }
+// SELECT //
+select {
+	overflow: hidden; text-indent:0.01px; text-overflow:'';
+ 	-webkit-appearance: none;appearance:none; -moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */
+}
+.arrow-down { 
+	position:absolute; top:40px; right:25px; display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-top: 4px solid #aeaeae; 
+	border-right: 4px solid transparent; border-left: 4px solid transparent; border-bottom: 0 dotted; content: "";
+}
 
 
 // CHECKBOX //
