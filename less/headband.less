@@ -1,6 +1,8 @@
 // HEADBAND //
 .headband { 
 	.make-row(0);
+	.make-lg-column(12);
+	padding:0;
 	line-height:40px; 
 	border-bottom:1px solid @border-color; 
 	position:fixed; 
@@ -9,10 +11,14 @@
 	background:#fff; 
 	h1 { 
 		.make-lg-column(2); 
+		padding-left:23px;
 		line-height:40px; 
 		margin:0; 
-		padding:0 0 0 10px; }
+		}
 	.glyphicon:empty { width: 40px; }
+	.btn-group {
+		margin-left:15px;
+	}
 	.btn-group .btn,
 	.btn-group > .btn:first-child { margin-left:15px;}
 }

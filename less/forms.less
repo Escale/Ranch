@@ -1,5 +1,5 @@
 // GENERAL //
-.form-control {background:#fff; border:1px solid #eee; box-shadow:none; color:#ccc; font-weight:300;}
+.form-control {background:#fff; border:1px solid #aeaeae; box-shadow:none; color:#aeaeae; font-weight:300;}
 .form-group {margin-bottom:0;}
 label {font-size:13px; font-weight:400; }
 :focus, input:focus, textarea:focus, {box-shadow:none; border:none; outline:none;}
@@ -19,7 +19,6 @@ input[type=radio] {
 
 
 // SELECT //
-// SELECT //
 select {
 	overflow: hidden; text-indent:0.01px; text-overflow:'';
  	-webkit-appearance: none;appearance:none; -moz-appearance:none; /* Firefox */-webkit-appearance:none; /* Safari and Chrome */
@@ -32,10 +31,11 @@ select {
 
 // CHECKBOX //
 input[type=checkbox] { 
-	.glyphicon; .glyphicon-ok; color:#fafafa; font-size:13px; .transition; border:1px solid @border-color; background:#fafafa; width:15px; min-height:15px; margin-top:0; outline:none; margin-top:3px;
+	.glyphicon; .glyphicon-ok; color:transparent; font-size:13px; .transition; border:1px solid #ddd; background:#fafafa; width:15px; min-height:15px; margin-top:0; outline:none; margin-top:3px;
     -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; 
 	&:hover {color:@color-style; opacity:.4; outline:none; }
 	&:checked { color:@color-style; opacity:1; outline:none; }
+	&:empty { width:1.1em; }
 }
 
 // INPUT-GROUP-ADDON

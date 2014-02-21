@@ -2,8 +2,9 @@ aside + section { .make-lg-column-offset(2);  }
 
 aside {
 	.make-lg-column(2); 
+	.pull-left;
 	height:100%; 
-	padding-top:80px; 
+	padding-top:70px; 
 	overflow-y: scroll;
 	display:block; 
 	background:@background-aside; 
@@ -19,7 +20,6 @@ aside {
 			> li { 
 				> a {
 					width:100%; 
-					padding-left: 20px; 
 					padding-right: 20px; 
 					border-radius:0; 
 					border-left:3px solid @background-aside;
@@ -30,11 +30,6 @@ aside {
 						background:@background-aside-hover; 
 						color:@text-color; 
 						border-left:3px solid @background-aside-hover; 
-					}
-					&:active,
-					&.active { 
-						background:@background-aside-active; 
-						border-left:3px solid @color-style;
 					}
 				}
 				> ul {
